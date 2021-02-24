@@ -1,0 +1,156 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+.header{
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.header h2{
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.titel{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+
+}
+
+.wrapper{
+    margin-bottom: 40px;
+}
+
+.wrap-element{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element{
+    width: 300px;
+    text-align: center;
+    margin: 15px;
+}
+
+.element img{
+    width: 100%;
+}
+
+.elem-text{
+    padding: 20px;
+    border: 2px solid #000;
+    border-top: none;
+}
+
+.justify-content{
+    justify-content: space-around;
+
+}
+
+.flex-direction{
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.align-items{
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.align-content{
+    max-width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    align-content: space-around;
+}
+
+.row-rewers{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.Flex-grow{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+.Flex-grow .element .elem-text,.Flex-shrink .element .elem-text, .Flex-order .element .elem-text{
+    border-top:2px solid #000;
+    min-height: 120px;
+}
+
+.element-grow-1,.element-grow-3{
+    flex-grow: 1;
+}
+
+.element-grow-2{
+    flex-grow: 4;
+}
+
+.Flex-shrink{
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+.Flex-shrink .element .elem-text{
+    height: 250px;
+}
+
+.element-shrink-1{
+    flex-shrink: 4;
+}
+
+.Flex-order{
+    justify-content: center;
+}
+
+.element-1{
+    order: 3;
+}
+
+.element-2{
+    order: 1;
+}
+
+.element-3{
+    order:4;
+}
+
+.element-4{
+    order:0;
+}
+
+.element-5{
+    order:2;
+}
+
+.nesting{
+    flex-direction: column;
+
+}
+.row-1, .row-2, .row-3, .row-4{
+    display: flex;
+    justify-content: center;
+}
+.block{
+    border:1px solid #000;
+    margin: 20px;
+    padding: 10px;
+}
